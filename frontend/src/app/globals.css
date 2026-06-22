@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 224 20% 6%;
+    --text-primary: 220 20% 94%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--text-primary));
+    font-family: 'DM Sans', sans-serif;
+  }
+}

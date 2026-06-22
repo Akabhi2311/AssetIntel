@@ -1,0 +1,12 @@
+from sqlalchemy import Column, Integer, Text, ForeignKey
+from app.database import Base
+
+
+class Summary(Base):
+    __tablename__ = "summaries"
+
+    id = Column(Integer, primary_key=True, index=True)
+
+    document_id = Column(Integer, ForeignKey("documents.id"))
+
+    summary = Column(Text)
